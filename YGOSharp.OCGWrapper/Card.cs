@@ -1,7 +1,7 @@
-﻿using OCGWrapper.Enums;
+﻿using YGOSharp.OCGWrapper.Enums;
 using System.Data;
 
-namespace OCGWrapper
+namespace YGOSharp.OCGWrapper
 {
     public class Card
     {
@@ -18,6 +18,7 @@ namespace OCGWrapper
             public int Defense;
             public int LScale;
             public int RScale;
+            public int LinkMarker;
         }
 
         public int Id { get; private set; }
@@ -29,6 +30,7 @@ namespace OCGWrapper
         public int Level { get; private set; }
         public int LScale { get; private set; }
         public int RScale { get; private set; }
+        public int LinkMarker { get; private set; }
 
         public int Attribute { get; private set; }
         public int Race { get; private set; }
@@ -49,7 +51,7 @@ namespace OCGWrapper
 
         public bool IsExtraCard()
         {
-            return (HasType(CardType.Fusion) || HasType(CardType.Synchro) || HasType(CardType.Xyz));
+            return (HasType(CardType.Fusion) || HasType(CardType.Synchro) || HasType(CardType.Xyz) || HasType(CardType.Link));
         }
 
         internal Card(IDataRecord reader)
@@ -70,6 +72,12 @@ namespace OCGWrapper
             Attack = reader.GetInt32(8);
             Defense = reader.GetInt32(9);
 
+            if (HasType(CardType.Link))
+            {
+                LinkMarker = Defense;
+                Defense = 0;
+            }
+
             Data = new CardData()
             {
                 Code = Id,
@@ -82,7 +90,8 @@ namespace OCGWrapper
                 Attack = Attack,
                 Defense = Defense,
                 LScale = LScale,
-                RScale = RScale
+                RScale = RScale,
+                LinkMarker = LinkMarker
             };
         }
     }

@@ -3,13 +3,13 @@ using System;
 using System.IO;
 #endif
 using System.Threading;
-using OCGWrapper;
+using YGOSharp.OCGWrapper;
 
 namespace YGOSharp
 {
     public class Program
     {
-        public static uint ClientVersion = 0x1338;
+        public static uint ClientVersion = 0x133D;
 
         public static void Main(string[] args)
         {

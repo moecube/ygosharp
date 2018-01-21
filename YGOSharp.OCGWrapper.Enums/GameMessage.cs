@@ -1,4 +1,4 @@
-﻿namespace OCGWrapper.Enums
+﻿namespace YGOSharp.OCGWrapper.Enums
 {
     public enum GameMessage
     {
@@ -70,7 +70,7 @@
         RemoveCounter = 102,
         Attack = 110,
         Battle = 111,
-        AttackDiabled = 112,
+        AttackDisabled = 112,
         DamageStepStart = 113,
         DamageStepEnd = 114,
         MissedEffect = 120,
@@ -79,15 +79,19 @@
         ReleaseRelation = 123,
         TossCoin = 130,
         TossDice = 131,
+        RockPaperScissors = 132,
+        HandResult = 133,
         AnnounceRace = 140,
         AnnounceAttrib = 141,
         AnnounceCard = 142,
         AnnounceNumber = 143,
+        AnnounceCardFilter = 144,
         CardHint = 160,
         TagSwap = 161,
         ReloadField = 162,
         AiName = 163,
         ShowHint = 164,
+        PlayerHint = 165,
         MatchKill = 170,
         CustomMsg = 180,
         DuelWinner = 200

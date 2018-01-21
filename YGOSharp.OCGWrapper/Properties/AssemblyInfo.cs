@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("YGOSharp.Network")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("OCGWrapper")]
+[assembly: AssemblyDescription("A C# wrapper for the ocgcore library.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("IceYGO")]
-[assembly: AssemblyProduct("YGOSharp.Network")]
+[assembly: AssemblyProduct("OCGWrapper")]
 [assembly: AssemblyCopyright("Copyright © IceYGO 2015-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6086fe8a-07cd-4720-a024-6aec05e93762")]
+[assembly: Guid("a8c2c9e8-456c-42d4-b8c4-1b689a94f9ef")]
 
 // Version information for an assembly consists of the following four values:
 //
