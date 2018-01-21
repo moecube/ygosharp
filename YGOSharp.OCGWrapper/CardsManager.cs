@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Microsoft.Data.Sqlite;
 using System.Data;
-using Mono.Data.Sqlite;
 
 namespace YGOSharp.OCGWrapper
 {

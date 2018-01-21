@@ -14,6 +14,14 @@ A C# implementation of an ygopro duel server, using the ocgcore library.
 
 * Enjoy.
 
+### Dotcore 2.0 support 
+
+* Checkout dotnetcore branch
+
+* Put _cards.cdb_, _lflist.conf_, _ocgcore.dll_ and the _script_ directory next to the compiled YGOSharp.dll.
+
+* Compile and run YGOSharp.sln using `dotnet run`
+
 ## Configuration options
 
 ### Server
